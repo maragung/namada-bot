@@ -139,7 +139,7 @@ bot.onText(/\/get_region/, (msg) => {
 
 async function fetchDataAndSend(chatId) {
   try {
-    const response = await axios.get("http://109.123.238.97:26657/status");
+    const response = await axios.get("http://127.0.0.1:26657/status");
     const data = response.data.result;
 
     const { node_info, sync_info, validator_info } = data;
