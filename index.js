@@ -219,4 +219,25 @@ bot.onText(/\/help/, (msg) => {
   bot.sendMessage(chatId, message);
 });
 
+
+bot.onText(/\/start/, (msg) => {
+  const chatId = msg.chat.id;
+
+  const startMessage = "Hello! I'm a bot designed to fetch Namada Node information periodically.\n" +
+    "You can use commands such as:\n\n" +
+    "/on <interval> - To enable automatic data fetching with a specified interval.\n" +
+    "/off - To disable automatic data fetching.\n" +
+    "/stats - To manually fetch and send blockchain-related data.\n" +
+    "/set_region <region> - To set the time region. Supported regions: utc-12 to utc+14.\n" +
+    "/get_region - To get the currently set region.\n" +
+    "/server - To get server statistics including disk, memory, and CPU usage.\n" +
+    "/help - To view the list of available commands.\n\n" +
+    "Enjoy using this bot!";
+
+  bot.sendMessage(chatId, startMessage);
+});
+
+
+
+
 console.log("Namada Bot is running.....\nType /help on Bot to start.")
