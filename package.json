@@ -1,0 +1,29 @@
+{
+  "name": "namada-bot",
+  "version": "1.0.0",
+  "description": "Namada Bot Telegram",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "namada",
+    "bot",
+    "telegram"
+  ],
+  "author": "maragung",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "diskusage": "^1.2.0",
+    "node-telegram-bot-api": "^0.64.0",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2"
+  }
+}
